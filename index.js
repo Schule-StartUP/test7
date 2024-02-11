@@ -4,7 +4,7 @@ const meinButton = document.querySelector('.meinButton');
 // Dann fügst du einen Eventlistener hinzu, der auf das Klicken des Buttons reagiert
 meinButton.addEventListener('click', async function() {
     try {
-                const response = await fetch('https://api.github.com/repos/your-username/your-repo/dispatches', {
+                const response = await fetch('https://api.github.com/repos/schule-startup/test7/dispatches', {
                     method: 'POST',
                     headers: {
                         'Authorization': `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`,
