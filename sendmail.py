@@ -12,7 +12,7 @@ sender_email = "schule.startup@outlook.de"
 sender_password = "Super197"
 
 # Empfänger-E-Mail-Adresse
-receiver_email = "philippheine7g@gmail.com"
+receiver_email = "roland.moessnerspam@gmail.com"
 
 # Betreff und Nachricht
 subject = "Test-E-Mail"
