@@ -4,10 +4,10 @@ const meinButton = document.querySelector('.meinButton');
 // Dann fügst du einen Eventlistener hinzu, der auf das Klicken des Buttons reagiert
 meinButton.addEventListener('click', async function() {
     try {
-                const response = await fetch('https://api.github.com/repos/schule-startup/test7/dispatches', {
+                const response = await fetch('https://api.github.com/repos/Schule-StartUP/test7/dispatches', {
                     method: 'POST',
                     headers: {
-                        'Authorization': `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`,
+                        'Authorization': `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`,
                         'Accept': 'application/vnd.github.everest-preview+json',
                         'Content-Type': 'application/json'
                     },
