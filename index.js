@@ -31,13 +31,8 @@ meinButton.addEventListener("click", async function () {
   };
 
   // **Anfrage erstellen**
-  const response = await octokit.request("POST", `/repos/${owner}/${repo}/dispatches`, {
-    headers,
-    mediaType: {
-      previews: ["everest"],
-    },
-    event_type: eventType,
-  });
+  const response = await octokit.request("POST", `/repos/${owner}/${repo}/dispatches`, { headers, mediaType: { previews: ["everest"] }, event_type: eventType });
+
 
   // **Fehlerbehandlung**
   try {
