@@ -16,6 +16,7 @@ meinButton.addEventListener('click', async function() {
     try {
         const response = await octokit.request('POST /repos/Schule-StartUP/test7/dispatches', {
             headers: {
+                'Authorization': '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',
                 'Accept': 'application/vnd.github.everest-preview+json',
                 'Content-Type': 'application/json'
             },
