@@ -3,17 +3,17 @@ import { Octokit } from "octokit";
 const meinButton = document.querySelector('.meinButton');
 
 meinButton.addEventListener('click', async function() {
+    const octokit = new Octokit({ 
+        auth: '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',
+    });
+
+    const authStatus = await octokit.auth();
+    if (!authStatus.token) {
+        alert('Fehler: Nicht authentifiziert. Bitte melde dich an.');
+        return;
+    }
+
     try {
-        const octokit = new Octokit({ 
-            auth: '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',
-        });
-
-        const authStatus = await octokit.auth();
-        if (!authStatus.token) {
-            alert('Fehler: Nicht authentifiziert. Bitte melde dich an.');
-            return;
-        }
-
         const response = await octokit.request('POST /repos/Schule-StartUP/test7/dispatches', {
             headers: {
                 'Accept': 'application/vnd.github.everest-preview+json',
