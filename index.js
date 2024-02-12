@@ -36,5 +36,5 @@ meinButton.addEventListener('click', async function() {
     }
 
     console.log('Der Button wurde geklickt!');
-    // Füge hier weitere Aktionen hinzu, die ausgeführt werden sollens
+    // Füge hier weitere Aktionen hinzu, die ausgeführt werden sollensa
 });
