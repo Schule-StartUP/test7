@@ -1,15 +1,11 @@
 import { Octokit } from "octokit";
 
-
-
-
 const meinButton = document.querySelector('.meinButton');
 
 meinButton.addEventListener('click', async function() {
     try {
         const octokit = new Octokit({ 
-          auth: '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',
-                });
+            auth: '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',
         });
 
         const authStatus = await octokit.auth();
@@ -39,5 +35,6 @@ meinButton.addEventListener('click', async function() {
     }
 
     console.log('Der Button wurde geklickt!');
-    // Füge hier weitere Aktionen hinzu, die ausgeführt werden sollensa
+    // Füge hier weitere Aktionen hinzu, die ausgeführt werden sollen
 });
+
