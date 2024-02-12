@@ -1,4 +1,4 @@
-import { Octokit } from "octokit";
+import { Octokit, App } from "https://esm.sh/octokit";
 
 const meinButton = document.querySelector('.meinButton');
 
