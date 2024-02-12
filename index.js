@@ -8,6 +8,13 @@ meinButton.addEventListener('click', async function() {
             auth: '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',
         });
 
+        // Überprüfe den Authentifizierungsstatus
+        const authStatus = await octokit.auth();
+        if (!authStatus.token) {
+            alert('Fehler: Nicht authentifiziert. Bitte melde dich an.');
+            return;
+        }
+
         const response = await octokit.request('POST /repos/Schule-StartUP/test7/dispatches', {
             headers: {
                 'Accept': 'application/vnd.github.everest-preview+json',
