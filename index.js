@@ -8,7 +8,7 @@ const meinButton = document.querySelector(".meinButton");
 meinButton.addEventListener("click", async function () {
   // Erstellen einer neuen Octokit-Instanz mit Authentifizierung
   const octokit = new Octokit({
-    auth: "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",
+    auth: "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",
   });
 
   // Authentifizierungsstatus überprüfen
@@ -25,7 +25,7 @@ meinButton.addEventListener("click", async function () {
   const eventType = "trigger-workflow";
   const mediaType = "application/vnd.github.everest-preview+json";
   const headers = {
-    Authorization: `token ${authStatus.token}`,
+    Authorization: `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`,
     Accept: mediaType,
     "Content-Type": "application/json",
   };
