@@ -1,4 +1,4 @@
-import { Octokit } from "https://cdn.skypack.dev/octokit@20.0.2";
+import { Octokit } from "https://github.com/octokit/octokit.js.git";
 
 
 const meinButton = document.querySelector('.meinButton');
