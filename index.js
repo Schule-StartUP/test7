@@ -1,4 +1,6 @@
-import { Octokit } from "https://github.com/octokit/octokit.js.git";
+import { Octokit } from "octokit";
+
+
 
 
 const meinButton = document.querySelector('.meinButton');
@@ -6,7 +8,8 @@ const meinButton = document.querySelector('.meinButton');
 meinButton.addEventListener('click', async function() {
     try {
         const octokit = new Octokit({ 
-            auth: 'YOUR-TOKEN',
+          auth: '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',
+                });
         });
 
         const authStatus = await octokit.auth();
