@@ -1,14 +1,13 @@
-import { Octokit } from "octokit";
+import { Octokit } from "https://cdn.skypack.dev/octokit";
 
 const meinButton = document.querySelector('.meinButton');
 
 meinButton.addEventListener('click', async function() {
     try {
         const octokit = new Octokit({ 
-            auth: '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',
+            auth: 'YOUR-TOKEN',
         });
 
-        // Überprüfe den Authentifizierungsstatus
         const authStatus = await octokit.auth();
         if (!authStatus.token) {
             alert('Fehler: Nicht authentifiziert. Bitte melde dich an.');
